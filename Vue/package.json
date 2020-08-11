@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^2.6.11",
-    "vue-router": "^3.4.2"
+    "vue-router": "^3.4.2",
+    "image2d":"^1.8.1"
   },
   "devDependencies": {
     "sass-loader": "^7.1.0",
