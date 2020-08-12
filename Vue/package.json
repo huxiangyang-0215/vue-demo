@@ -12,6 +12,7 @@
   "author": "@东方逸遐",
   "license": "ISC",
   "dependencies": {
+    "@yelloxing/normalize.css": "^0.2.2",
     "image2d": "^1.8.1",
     "vue": "^2.6.11",
     "vue-router": "^3.4.2"

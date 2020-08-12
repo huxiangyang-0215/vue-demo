@@ -9,6 +9,10 @@ import './directives/index'
 
 // 引入公共组件
 import './components/index'
+
+// 引入公共样式
+import '@yelloxing/normalize.css'
+
 // 创建根vue实例对象
 new Vue({
     // 挂载点
