@@ -6,7 +6,7 @@
   <form novalidate v-submit="doSubmit">
     <div class="row">
       <label>姓名</label>
-      <ep-input v-model="params.personName"></ep-input>
+      <ep-input v-model="params.personName" v-valid-required></ep-input>
     </div>
     <div class="row">
       <label>出生年月</label>
@@ -51,7 +51,12 @@ export default {
   },
   methods: {
     doSubmit() {
-      console.warn("表单提交");
+      this.$router.push({
+        name:"output",
+        params:{
+          paramsData: this.params,
+        }
+      })
     },
     doReset() {
       console.warn("表单重置");
@@ -63,6 +68,9 @@ export default {
 form {
   width: 295px;
   padding: 10px 0;
+  &.ep-invalid div.btn-list > .btn.btn-submit {
+    background-color: red;
+  }
   div {
     &.row {
       & > label {

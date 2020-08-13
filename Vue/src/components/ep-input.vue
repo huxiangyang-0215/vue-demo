@@ -16,5 +16,9 @@ export default {
 <style lang="scss">
 .input-root-view {
   display: inline-block;
+  &.ep-invalid > input {
+    border: 1px solid red;
+    outline: none;
+  }
 }
 </style>

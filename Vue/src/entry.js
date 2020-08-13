@@ -5,10 +5,10 @@ import App from './App.vue';
 import router from './router';
 
 // 引入公共指令
-import './directives/index'
+import './directives/index.js'
 
 // 引入公共组件
-import './components/index'
+import './components/index.js'
 
 // 引入公共样式
 import '@yelloxing/normalize.css'
