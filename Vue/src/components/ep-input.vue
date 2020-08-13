@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="input-root-view">
         <input ref="myValue" type="text" :value="value" @input="doit()">
     </div>
 </template>
@@ -13,3 +13,8 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.input-root-view {
+  display: inline-block;
+}
+</style>
